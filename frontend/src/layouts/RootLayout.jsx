@@ -1,11 +1,20 @@
 
 import react from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const RootLayout = () => {
   return <>
-    This is root layouts
-    <Outlet />
+  <header>
+    <Navbar/>
+  </header>
+
+  <main>
+    <Outlet/>
+  </main>
+    
+    
+    
   </>
 };
 export { RootLayout };
