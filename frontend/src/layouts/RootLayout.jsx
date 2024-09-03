@@ -5,16 +5,17 @@ import Navbar from "../Components/Navbar";
 
 const RootLayout = () => {
   return <>
-  <header>
-    <Navbar/>
-  </header>
+  <div className="bg-red-600  ">
+    
+    <header className="">
+      <Navbar/>
+    </header>
+   <main>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dignissimos voluptas doloribus, facilis  at cumque quibusdam doloremque similique fugit sapiente tempora saepe possimus rem nam est. Ad quos quaerat nam. 
 
-  <main>
-    <Outlet/>
-  </main>
-    
-    
-    
+    <Outlet />
+   </main>
+  </div>
   </>
 };
 export { RootLayout };
